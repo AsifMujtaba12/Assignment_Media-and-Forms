@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        form {
+            padding:20px;
+            border: 1px solid;
+            border-radius: 5px;
+            width: 300px;
+            margin-bottom: 100px;
+        
+        }
+        label{
+            margin-bottom: 10px;
+
+        }
+        input[type=text],input[type=email],input[type=password],input[type=number]{
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+
+        }
+
+        
+        input[type=submit] {
+          background-color: #3CBC8D;
+              color: white;
+              padding: 10px;
+              width: 250px;
+              border-radius: 5px;
+         
+    
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign-Up Form</h1>
+    <form autocomplete="on">  
+    <label for="First Name">First Name</label><br>     
+    <input type="text" name="fName" id="First Name" placeholder="Enter your first name" required minlength="3"> <br>
+    <label for="First Name">Last Name</label><br>     
+    <input type="text" name="lastName" id="Last Name" placeholder="Enter your last name" required minlength="3"> <br>
+    <label for="E-mail">E-mail</label><br>     
+    <input type="email" name="email" id="E-mail" placeholder="Enter your E-mail" required minlength="3"> <br>
+    <label for="password">Password</label><br>     
+    <input type="password" name="password" id="password" placeholder="Enter your password" required minlength="8"> <br>
+    <label for="confirm password"> Confirm Password</label><br>     
+    <input type="password" name="password" id="confirm password" placeholder="please confirm your password" required minlength="8"> <br>
+    <label for="age">Age</label><br>     
+    <input type="number" name="age" id="age" placeholder="Enter your age" required min="1"> <br>
+    <label for="gender">Gender</label><br>
+    <select name="gender" id="gender" required><br>
+        <option value="Select">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">female</option>
+        <option value="other">Others</option>
+
+    </select><br>
+    <label for="terms">Terms and Conditions</label>
+    <input type="checkbox" id="terms"><br><br>
+<input type="submit" value="Sign-Up">
+    <br><br><br>
+    
+
+    
+    </form>
+    <h1>Sing-In Form</h1>
+    <form autocomplete="on">
+    <label for="E-mail">E-mail</label><br>     
+    <input type="email" name="email" id="E-mail"  required minlength="3"> <br>
+    <label for="password">Password</label><br>     
+    <input type="password" name="password" id="password" required minlength="8"> <br><br>
+    <input type="submit" value="Sing-In">
+
+
+
+
+        
+    </form>
+</body>
+</html>
